@@ -55,12 +55,6 @@ build CMakeFiles/second_4.dir/main.cpp.obj: CXX_COMPILER__second_4_Debug C$:/C++
   OBJECT_DIR = CMakeFiles\second_4.dir
   OBJECT_FILE_DIR = CMakeFiles\second_4.dir
 
-build CMakeFiles/second_4.dir/test.cpp.obj: CXX_COMPILER__second_4_Debug C$:/C++/second_4/test.cpp || cmake_object_order_depends_target_second_4
-  DEP_FILE = CMakeFiles\second_4.dir\test.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\second_4.dir
-  OBJECT_FILE_DIR = CMakeFiles\second_4.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target second_4
@@ -69,7 +63,7 @@ build CMakeFiles/second_4.dir/test.cpp.obj: CXX_COMPILER__second_4_Debug C$:/C++
 #############################################
 # Link the executable second_4.exe
 
-build second_4.exe: CXX_EXECUTABLE_LINKER__second_4_Debug CMakeFiles/second_4.dir/main.cpp.obj CMakeFiles/second_4.dir/test.cpp.obj
+build second_4.exe: CXX_EXECUTABLE_LINKER__second_4_Debug CMakeFiles/second_4.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\second_4.dir
