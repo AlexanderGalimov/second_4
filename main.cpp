@@ -14,7 +14,6 @@ struct node {
     void setValue(int newValue){
         this->value = newValue;
     }
-
 };
 
 struct list {
@@ -65,7 +64,7 @@ struct list {
         node* temp;
         size++;
         while(true){
-            if(cnt == index - 2){
+            if(cnt == index - 1){
                 temp = curr->next;
                 curr->next = n;
                 n->next = temp;
@@ -127,13 +126,11 @@ int main()
 
     l->addFirst(new node(5));
 
-    // 5 4 3 2 1
-    // 5 4 3 2 1 10
-    // 5 3 2 1 10
-
     l->addByIndex(new node(10),l->getSize() - 1);
 
     l->deleteByIndex(2);
+
+    // 5 3 2 1 10
 
     l->display();
 
